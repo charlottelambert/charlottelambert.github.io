@@ -16,9 +16,9 @@
   --main-text-color: var(--light-text-color);
   --light-bg-color: #fefefe;
   --dark-bg-color: #242c34;
-  --light-pop-color: var(--pink-1);
-  --main-pop-color: var(--pink-2);
-  --dark-pop-color: var(--pink-3);
+  --light-pop-color: var(--turquoise-1);
+  --main-pop-color: var(--turquoise-2);
+  --dark-pop-color: var(--turquoise-3);
   /* COLOR DEFINITIONS (light to dark) */
   --blue-1: #afd9ee;
   --blue-2: #3498DB;
