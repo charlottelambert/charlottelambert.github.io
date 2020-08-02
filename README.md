@@ -5,3 +5,6 @@ Line 19 of `index.html` loads a style sheet that controls the color scheme. If y
 Tell me if that makes sense or if I'm misunderstanding what a palette means in this context (which is sorta what I think is happening here).
 
 I also downloaded the style sheet so I can edit it if you want to play around with that. Just comment out line 19 and uncomment line 20 and you can edit the file `flat-ui.min.css` to see how it changes things.
+
+
+To change color scheme: update the variables in `css/style.css` file.

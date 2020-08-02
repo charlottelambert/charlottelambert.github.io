@@ -1,17 +1,53 @@
 /* Universal box-sizing as per https://css-tricks.com/box-sizing/ */
-html {
+/* html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; } */
 
 /* Universal box-sizing as per https://css-tricks.com/box-sizing/ */
-*, *:before, *:after {
+/* *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  box-sizing: inherit; }
+  box-sizing: inherit; } */
+
+:root {
+  --light-text-color: #ECF0F1; /*#e4e4e4;*/
+  --dark-text-color: #34495e;
+  --main-text-color: var(--light-text-color);
+  --light-bg-color: #fefefe;
+  --dark-bg-color: #242c34;
+  --light-pop-color: var(--pink-1);
+  --main-pop-color: var(--pink-2);
+  --dark-pop-color: var(--pink-3);
+  /* COLOR DEFINITIONS (light to dark) */
+  --blue-1: #afd9ee;
+  --blue-2: #3498DB;
+  --blue-3: #2980B9;
+  --turquoise-1: #48c9b0;
+  --turquoise-2: #1ABC9C;
+  --turquoise-3: #16A085;
+  /* --purple-1: ; */
+  --purple-2: #9B59B6;
+  --purple-3: #8E44AD;
+  --green-1: #c1e2b3;
+  --green-2: #2ECC71;
+  --green-3: #27AE60;
+  --yellow-1: #f7ecb5;
+  --yellow-2: #F1C40F;
+  --yellow-3: #F39C12;
+  --red-1: #e4b9b9;
+  --red-2: #E74C3C;
+  --red-3: #C0392B;
+  --pink-1: #ff619b;
+  --pink-2: #e5578b;
+  --pink-3: #cc4d7c;
+  --pinkish-1: #af739a;
+  --pinkish-2: #9d678a;
+  --pinkish-3: #8c5c7b;
+}
 
 body {
-  background-color: #fefefe;
+  background-color: var(--dark-bg-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -24,6 +60,38 @@ body {
   font-smoothing: antialiased; }
   body.is-offset {
     margin-top: -195px; }
+
+a {
+  color: var(--dark-pop-color);
+}
+
+a:hover {
+  color: var(--main-pop-color);
+}
+
+h4, h6, li, p {
+  color: var(--main-text-color);
+}
+
+hr {
+  border-top: 0.5px solid var(--main-text-color);
+}
+
+img {
+  border:5px solid var(--main-text-color)
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--main-pop-color);
+}
+
+a.btn-primary.hover {
+  color: white;
+  background-color: var(--light-pop-color);
+  border-color: var(--light-pop-color);
+}
+
 
 #header {
   margin-top: 50px; }
