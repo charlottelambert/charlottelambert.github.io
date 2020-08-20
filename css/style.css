@@ -1,24 +1,12 @@
-/* Universal box-sizing as per https://css-tricks.com/box-sizing/ */
-/* html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; } */
-
-/* Universal box-sizing as per https://css-tricks.com/box-sizing/ */
-/* *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; } */
-
 :root {
   --light-text-color: #ECF0F1; /*#e4e4e4;*/
   --dark-text-color: #34495e;
   --main-text-color: var(--light-text-color);
   --light-bg-color: #fefefe;
   --dark-bg-color: #242c34;
-  --light-pop-color: var(--turquoise-1);
-  --main-pop-color: var(--turquoise-2);
-  --dark-pop-color: var(--turquoise-3);
+  --light-pop-color: var(--yellow-1);
+  --main-pop-color: var(--yellow-2);
+  --dark-pop-color: var(--yellow-3);
   /* COLOR DEFINITIONS (light to dark) */
   --blue-1: #afd9ee;
   --blue-2: #3498DB;
@@ -26,15 +14,15 @@
   --turquoise-1: #48c9b0;
   --turquoise-2: #1ABC9C;
   --turquoise-3: #16A085;
-  /* --purple-1: ; */
-  --purple-2: #9B59B6;
-  --purple-3: #8E44AD;
+  --purple-1: #BD97E2;
+  --purple-2: #AD7DDB;
+  --purple-3: #9871BD;
   --green-1: #c1e2b3;
   --green-2: #2ECC71;
   --green-3: #27AE60;
-  --yellow-1: #f7ecb5;
+  /* --yellow-1: #f7ecb5;
   --yellow-2: #F1C40F;
-  --yellow-3: #F39C12;
+  --yellow-3: #F39C12; */
   --red-1: #e4b9b9;
   --red-2: #E74C3C;
   --red-3: #C0392B;
@@ -44,11 +32,20 @@
   --pinkish-1: #af739a;
   --pinkish-2: #9d678a;
   --pinkish-3: #8c5c7b;
+  --yellow-1: #F4C859;
+  --yellow-2: #F2BB30;
+  --yellow-3: #C19526;
 }
 
 body {
   background-color: var(--dark-bg-color);
   -webkit-text-size-adjust: 100%;
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Archivo Black', sans-serif; */
+  /* font-family: 'Baloo Tamma 2', cursive; */
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Red Hat Text', sans-serif;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
@@ -94,7 +91,7 @@ a.btn-primary.hover {
 
 
 #header {
-  margin-top: 50px; }
+  margin-top: 20px;}
   @media (max-width: 480px) {
     #header {
       text-align: center; } }
