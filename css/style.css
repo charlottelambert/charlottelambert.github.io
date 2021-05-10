@@ -94,7 +94,7 @@ img {
 .btn-primary {
   color: white;
   background-color: var(--main-pop-color);
-}
+} 
 
 a.btn-primary.hover {
   color: white;
