@@ -3,6 +3,8 @@
   --dark-text-color: #34495e;
   --main-text-color: var(--light-text-color);
   --light-bg-color: #fefefe;
+  /* --box-bg-color:#38434e; */
+  --box-bg-color:#2f3841;
   --dark-bg-color: #242c34;
   --light-pop-color: var(--yellow-1);
   --main-pop-color: var(--yellow-2);
@@ -70,6 +72,17 @@ h4, h6, h7, ul, li, p {
   color: var(--main-text-color);
 }
 
+h8 {
+  font-family: 'Courier New', monospace;
+  font-size: 11pt;
+}
+
+.boxed {
+  padding: 10px;
+  border: 1px solid white;
+  background-color: var(--box-bg-color);
+}
+
 hr {
   border-top: 0.5px solid var(--main-text-color);
 }
@@ -89,6 +102,23 @@ a.btn-primary.hover {
   border-color: var(--light-pop-color);
 }
 
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: var(--dark-pop-color);
+  cursor: pointer;
+}
+
+button:hover{
+  color: var(--light-pop-color);
+}
+
+
+#more {display: none;}
 
 #header {
   margin-top: 20px;}
