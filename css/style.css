@@ -83,6 +83,8 @@ h8 {
   background-color: var(--box-bg-color);
 }
 
+
+
 hr {
   border-top: 0.5px solid var(--main-text-color);
 }
@@ -94,7 +96,7 @@ img {
 .btn-primary {
   color: white;
   background-color: var(--main-pop-color);
-} 
+}
 
 a.btn-primary.hover {
   color: white;
