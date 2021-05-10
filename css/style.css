@@ -82,16 +82,61 @@ h8 {
   border: 1px solid white;
   background-color: var(--box-bg-color);
 }
+.face
+    {
+      position:absolute;
+      align=left;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      width: 260px;
+      height: auto;
+        border:5px solid var(--main-text-color)
+      /* background: url("static/img/charlotte.jpg") no-repeat; */
+    }
+.maddy
+  {
+    position:absolute;
+    top: 225px;
+    left: 208px;
+    z-index: 2;
+    border:0px;
+    width: 20px;
+    height: auto;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 65%;
+  }
+  .maddy-border
+    {
+      position:absolute;
+      top: 225px;
+      left: 208px;
+      z-index: 2;
+      border:0px;
+      width: 20px;
+      height: auto;
+      opacity:0;
+    }
+.maddy-border:hover {
+  opacity:1
+}
 
-
+/* .maddy:hover{
+  background: url("static/img/maddy-border.png") no-repeat;
+} */
 
 hr {
   border-top: 0.5px solid var(--main-text-color);
 }
 
-img {
+/* img {
   border:5px solid var(--main-text-color)
-}
+} */
 
 .btn-primary {
   color: white;
