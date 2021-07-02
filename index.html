@@ -92,7 +92,7 @@
     <h6>Research</h6>
     <!-- <br> -->
 
-    <h7>Ongoing Projects</h7>
+    <h7>Ongoing Projects:</h7>
     <ul>
     <li> <i> Conversation-Level Resilience: </i>
       The pervasive nature of antisocial behavior in online communities raises the question: what makes a conversation resilient to the influence of bad actors? I am exploring what types of Reddit conversations are able to withstand an antisocial interruption without turning antisocial and whether the presence of prosocial behavior prior to an interruption has any effect on the resilience of a conversation.
@@ -101,13 +101,40 @@
     </ul>
 
     <br>
-    <h7> Past Projects</h7>
+    <h7> Past Projects:</h7>
     <ul>
+      <li> Inter-Sense: An Investigation of Sensory Blending in Fiction <br>
+        Corina R Girju and Charlotte Lambert <br>
+        Paper in the <a href="https://odeuropa.github.io/mdk21/" target="_blank"> First International Workshop on Multisensory Data & Knowledge</a>
+
+        <button onclick="showBibtex(BibTeXBtn2)" id="BibTeXBtn2">[BibTeX]</button><span id="BibTeXBtn2-dots"></span><span id="BibTeXBtn2-more" style="display: none">
+        <br>
+
+        <br>
+        <div class="boxed">
+        <h8>
+          @inproceedings{girju-inter-sense-2021, <br>
+          <ul>
+          title={{Inter-Sense: An Investigation of Sensory Blending in Fiction}},<br>
+          author = {Girju, {Corina R} and Charlotte Lambert},<br>
+          year = "2021",<br>
+          language = "English (US)",<br>
+          booktitle = "First International Workshop on Multisensory Data & Knowledge"<br>
+          </ul>
+        }
+        <br>
+        </h8>
+      </div>
+
+      <br>
+        </span>
+      </li>
+
     <li> <a href="http://centreforsensorystudies.org/wp-content/uploads/2021/05/UcS2021_Book_of_Abstracts.pdf#page=66" target="_blank">Story Immersion: Toward Fiction Synesthesia for Enhanced Reader Empathy</a>,
       Corina R Girju and Charlotte Lambert
       <br>
       Presentation in <i> Uncommon Senses Conference</i>, 2021.
-      <button onclick="showBibtex()" id="BibTeXBtn">[BibTeX]</button><span id="dots"></span><span id="more">
+      <button onclick="showBibtex(BibTeXBtn1)" id="BibTeXBtn1">[BibTeX]</button><span id="BibTeXBtn1-dots"></span><span id="BibTeXBtn1-more" style="display: none">
         <br>
 
         <br>
@@ -130,6 +157,7 @@
         <br>
         </h8>
       </div>
+
       <br>
         </span>
 
@@ -206,10 +234,14 @@
   </style>
 
   <script>
-  function showBibtex() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("BibTeXBtn");
+  function showBibtex(btnID) {
+    var id = btnID.id
+    var dots = document.getElementById(id + "-dots");
+    var moreText = document.getElementById(id + "-more");
+    // "BibTeXBtn"
+    console.log(btnID.id);
+    var btnText = document.getElementById(id);
+
 
     if (dots.style.display === "none") {
       dots.style.display = "inline";
