@@ -1,14 +1,25 @@
 :root {
   --light-text-color: #ECF0F1; /*#e4e4e4;*/
   --dark-text-color: #34495e;
-  --main-text-color: var(--light-text-color);
-  --light-bg-color: #fefefe;
+
   /* --box-bg-color:#38434e; */
-  --box-bg-color:#2f3841;
+  /* Dark background */
+  /* --box-bg-color:#2f3841;
   --dark-bg-color: #242c34;
   --light-pop-color: var(--yellow-1);
   --main-pop-color: var(--yellow-2);
-  --dark-pop-color: var(--yellow-3);
+  --dark-pop-color: var(--yellow-3); 
+  --main-text-color: var(--light-text-color);  */
+
+
+  /* Light background */
+  --light-bg-color: #fefefe;
+  --box-bg-color:#2f3841;
+  --light-pop-color: var(--blue-1);
+  --main-pop-color: var(--blue-2);
+  --dark-pop-color: var(--blue-3);
+  --main-text-color: var(--dark-text-color);
+
   /* COLOR DEFINITIONS (light to dark) */
   --blue-1: #afd9ee;
   --blue-2: #3498DB;
@@ -40,7 +51,7 @@
 }
 
 body {
-  background-color: var(--dark-bg-color);
+  /* background-color: var(--light-bg-color); */
   -webkit-text-size-adjust: 100%;
   /* font-family: 'Quicksand', sans-serif; */
   /* font-family: 'Roboto', sans-serif; */
@@ -68,9 +79,15 @@ a:hover {
   color: var(--main-pop-color);
 }
 
-h4, h6, h7, ul, li, p {
+ h4, h7, ul, li, p {
   color: var(--main-text-color);
 }
+
+h6 {
+  color: var(--main-text-color);
+  font-weight: bold;
+}
+
 
 h8 {
   font-family: 'Courier New', monospace;
@@ -82,23 +99,27 @@ h8 {
   border: 1px solid white;
   background-color: var(--box-bg-color);
 }
+
 .face
     {
+      /* .pull-right {
+      
+        } */
+      margin: 0 0 0 auto;
       position:absolute;
-      align=left;
-      top: 10px;
-      left: 10px;
+      /* top: 10px;
+      left: 10px; */
       z-index: 1;
       width: 260px;
       height: auto;
-        border:5px solid var(--main-text-color)
+        /* border:5px solid var(--main-text-color) */
       /* background: url("static/img/charlotte.jpg") no-repeat; */
     }
 .maddy
   {
     position:absolute;
     top: 225px;
-    left: 175px;
+    left: 275px;
     z-index: 2;
     border:0px;
     width: 20px;
@@ -138,6 +159,10 @@ hr {
   border:5px solid var(--main-text-color)
 } */
 
+img {
+  border-radius: 10px;
+}
+
 .btn-primary {
   color: white;
   background-color: var(--main-pop-color);
@@ -150,9 +175,9 @@ a.btn-primary.hover {
 }
 
 button {
-  background: none!important;
-  border: none;
-  padding: 0!important;
+  /* background: none!important; */
+  /* border: none; */
+  /* padding: 0!important; */
   /*optional*/
   font-family: arial, sans-serif;
   /*input has OS specific font-family*/
@@ -163,6 +188,23 @@ button {
 button:hover{
   color: var(--light-pop-color);
 }
+
+.ref-button {
+  background-color: var(--main-pop-color)!important;
+  padding: 4px 6px!important;
+  border: 0px!important;
+  /*optional*/
+  /* font-family: arial, sans-serif; */
+  /* input has OS specific font-family */
+  color: var(--light-bg-color);
+  /* cursor: pointer; */
+}
+
+.ref-button:hover {
+  background-color: var(--light-pop-color)!important;
+}
+
+
 
 
 #more {display: none;}
@@ -186,3 +228,7 @@ button:hover{
 
 .center {
   text-align: center; }
+
+div.content { width: 800px;
+  margin-left: auto;
+  margin-right: auto;}
