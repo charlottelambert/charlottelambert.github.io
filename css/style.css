@@ -103,16 +103,8 @@ h8 {
       width: 280px;
       height: auto;
     }
-.maddy
-  {
-    position:absolute;
-    top: 225px;
-    left: 275px;
-    z-index: 2;
-    border:0px;
-    width: 20px;
-    height: auto;
-  }
+
+
   .center {
     display: block;
     margin-left: auto;
@@ -231,4 +223,43 @@ p.faded {
 p.mono {
   font-family: monospace;
   font-size: 12pt;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.bottom {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.top {
+  position: relative;
+  top: -50px;
+  right: -100px;
+}
+
+.maddy
+  {
+    /* position:absolute;
+    top: 225px;
+    left: 275px;
+    z-index: 2; */
+    border:0px;
+    width: 20px;
+    height: auto;
+  }
+
+.visuallyhidden{position:absolute;clip:rect(1px,1px,1px,1px)}
+/* .copybutton{background-color:#fff;border:0;outline:0;cursor:pointer;opacity:1;position:absolute;width:40px;height:40px;z-index:9;border-radius:24px} */
+div.custom-tooltip {
+    display: none;
+    margin-left: 15px;
+    padding: 5px 8px;
+    background-color: gray;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #fff;
 }
