@@ -190,18 +190,18 @@ button:hover{
 }
 
 .ref-button {
-  background-color: var(--main-pop-color)!important;
+  /* background-color: var(--main-pop-color)!important; */
+  background-color: var(--light-bg-color)!important;
   padding: 4px 6px!important;
-  border: 0px!important;
-  /*optional*/
-  /* font-family: arial, sans-serif; */
-  /* input has OS specific font-family */
-  color: var(--light-bg-color);
-  /* cursor: pointer; */
+  border: 2px solid var(--main-pop-color);
+  /* color: var(--light-bg-color); */
+  color: var(--main-pop-color);
 }
 
 .ref-button:hover {
-  background-color: var(--light-pop-color)!important;
+  /* background-color: var(--light-pop-color)!important; */
+  border: 2px solid var(--light-pop-color);
+  color: var(--light-pop-color);
 }
 
 
