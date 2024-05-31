@@ -252,3 +252,9 @@ li {
 li.unpadded {
   margin: 0 0;
 }
+
+p.faded {
+  text-align: right;
+  color:darkgray;
+  font-style: italic; 
+}
