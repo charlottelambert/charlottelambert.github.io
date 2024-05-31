@@ -1,7 +1,7 @@
 :root {
   --light-text-color: #ECF0F1; /*#e4e4e4;*/
-  --dark-text-color: #34495e;
-
+  /* --dark-text-color: #34495e; */
+  --dark-text-color: black;
   /* --box-bg-color:#38434e; */
   /* Dark background */
   /* --box-bg-color:#2f3841;
@@ -53,12 +53,8 @@
 body {
   /* background-color: var(--light-bg-color); */
   -webkit-text-size-adjust: 100%;
-  /* font-family: 'Quicksand', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'Archivo Black', sans-serif; */
-  /* font-family: 'Baloo Tamma 2', cursive; */
-  font-family: 'Avenir', sans-serif;
-  /* font-family: 'Red Hat Text', sans-serif; */
+  /* font-family: 'xxx', sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
@@ -88,7 +84,6 @@ h6 {
   font-weight: bold;
 }
 
-
 h8 {
   font-family: 'Courier New', monospace;
   font-size: 11pt;
@@ -102,18 +97,11 @@ h8 {
 
 .face
     {
-      /* .pull-right {
-      
-        } */
       margin: 0 0 0 auto;
       position:absolute;
-      /* top: 10px;
-      left: 10px; */
       z-index: 1;
       width: 280px;
       height: auto;
-        /* border:5px solid var(--main-text-color) */
-      /* background: url("static/img/charlotte.jpg") no-repeat; */
     }
 .maddy
   {
@@ -147,17 +135,9 @@ h8 {
   opacity:1
 }
 
-/* .maddy:hover{
-  background: url("static/img/maddy-border.png") no-repeat;
-} */
-
 hr {
   border-top: 0.5px solid var(--main-text-color);
 }
-
-/* img {
-  border:5px solid var(--main-text-color)
-} */
 
 img {
   border-radius: 10px;
@@ -175,12 +155,7 @@ a.btn-primary.hover {
 }
 
 button {
-  /* background: none!important; */
-  /* border: none; */
-  /* padding: 0!important; */
-  /*optional*/
   font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
   color: var(--dark-pop-color);
   cursor: pointer;
 }
@@ -190,11 +165,9 @@ button:hover{
 }
 
 .ref-button {
-  /* background-color: var(--main-pop-color)!important; */
   background-color: var(--light-bg-color)!important;
   padding: 4px 6px!important;
   border: 2px solid var(--main-pop-color);
-  /* color: var(--light-bg-color); */
   color: var(--main-pop-color);
 }
 
@@ -203,9 +176,6 @@ button:hover{
   border: 2px solid var(--light-pop-color);
   color: var(--light-pop-color);
 }
-
-
-
 
 #more {display: none;}
 
@@ -237,7 +207,6 @@ div.content {
   margin-right: auto;
 }
 
-
 ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   margin: 15px;
@@ -257,4 +226,9 @@ p.faded {
   text-align: right;
   color:darkgray;
   font-style: italic; 
+}
+
+p.mono {
+  font-family: monospace;
+  font-size: 12pt;
 }
