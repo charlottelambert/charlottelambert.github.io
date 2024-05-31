@@ -110,7 +110,7 @@ h8 {
       /* top: 10px;
       left: 10px; */
       z-index: 1;
-      width: 260px;
+      width: 280px;
       height: auto;
         /* border:5px solid var(--main-text-color) */
       /* background: url("static/img/charlotte.jpg") no-repeat; */
@@ -229,6 +229,26 @@ button:hover{
 .center {
   text-align: center; }
 
-div.content { width: 800px;
+div.content { 
+  width: min(800px, 85%);
+  /* margin-left: max(30px,10%);
+  margin-right: max(30px,10%); */
   margin-left: auto;
-  margin-right: auto;}
+  margin-right: auto;
+}
+
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  margin: 15px;
+  padding: 0px;
+  /* margin: 0; Remove margins */
+}
+
+li {
+  margin: 10px 0;
+}
+
+li.unpadded {
+  margin: 0 0;
+}
